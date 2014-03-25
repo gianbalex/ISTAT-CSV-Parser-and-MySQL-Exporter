@@ -1,2 +1,3 @@
-csv/*.*
-export/*.*
+csv/*.csv
+export/*.sql
+export/*.gz
