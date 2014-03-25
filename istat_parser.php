@@ -22,7 +22,9 @@
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
 */
+
 header("Content-type: text/plain");
+
 class Istat_Parser {
 
 	var $file_regioni_province 	= 	"csv/regioni_province.csv";
