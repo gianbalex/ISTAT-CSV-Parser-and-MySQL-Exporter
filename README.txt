@@ -1,6 +1,6 @@
 ISTAT CSV Parser and MySQL Exporter
-
 Copyright (c) 2014 Gianfilippo Balestriero
+
 see LICENSE.txt
 
 Usage:
@@ -14,7 +14,9 @@ Usage:
 4) Put the "ripartizioni_regioni_province_[num].csv" file in "csv" folder then rename it in "regioni_province.csv"
 
 5) Run "php istat_parser.php" command from your command console or execute it on your web server
+
 6) Will be created two files in "export" folder: "istat_parser_export.sql" and "istat_parse_export.gz"
+
 7) Import one of this files on your MySQL database or by PhpMyAdmin
 
 It will create the following table structure with the following relations:
