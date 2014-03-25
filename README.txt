@@ -36,5 +36,4 @@ istat_comuni:
 	codice_provincia 	-> istat_province[codice]
 
 Important:
-
 	Set "utf8_general_ci" colletion for your ISTAT database
