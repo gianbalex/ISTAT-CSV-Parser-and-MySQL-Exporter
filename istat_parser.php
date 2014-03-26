@@ -199,7 +199,7 @@ class Istat_Parser {
 	}
 
 	function save_file(){
-		$license = $this->read_license();
+		$license = $this->get_odbl_license();
 		@unlink($this->file_name_sql);
 		@unlink($this->file_name_gz);
 		file_put_contents($this->file_name_sql, $license.$this->sql);
@@ -215,6 +215,19 @@ class Istat_Parser {
 			$license .= "* ".$line."\n";
 		}
 		$license 	 .= "*/\n\n";
+		return $license;
+	}
+
+	function get_odbl_license(){
+		$license="";
+		$license.="/*\n";
+		$license.="* \n";
+		$license.="* This ISTAT-CSV-Parser-and-MySQL-Exporter is made available under the Open Database License:\n"; 
+		$license.="* http://opendatacommons.org/licenses/odbl/1.0/.\n\n";
+		$license.="* Any rights in individual contents of the database are licensed under the Database Contents License:\n";
+		$license.="* http://opendatacommons.org/licenses/dbcl/1.0/\n";
+		$license.="* \n";
+		$license.="*/\n\n";
 		return $license;
 	}
 
